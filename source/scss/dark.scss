@@ -1,0 +1,91 @@
+//
+// Typography
+//
+
+$font-stack: "Libre Baskerville", serif;
+$open-sans: "Open Sans", sans-serif;
+
+//
+// Colors
+//
+$primary-color: #64537F;
+$title-color: #A9A0B7;
+$text-color: #ababab;
+$light-dark: #1e2530;
+
+.dark {
+	background-color: #090115;
+	color: $text-color;
+	.waviy span {
+		color: #fff;
+	  }
+
+	.page-home .overlay {
+		background-color: rgba($light-dark, 0.8);
+	}
+
+	.subtitle {
+		b{
+			color: #fff;
+			font-family: $open-sans;
+		}
+	}
+
+	.page-title {
+		// h2 {
+		// 	color: $title-color;
+		// }
+
+		.title-bg {
+			color: rgba($light-dark, 0.9);
+		}
+	}
+
+	.section-title h3::before {
+		background-color: #fff;
+	}
+
+	// h1,
+	// h2,
+	// h3,
+	// h4,
+	// h5,
+	// h6,
+	// .about-author .author-desc p {
+	// 	color: $title-color;
+	// }
+	.preview-wrapper {
+		background-color: $light-dark;
+	}
+	.switcher-head {
+		color: #fff;
+		background-color: $light-dark;
+	}
+	.switcher-body {
+		background-color: $light-dark;
+		h4 {
+			color: #fff;
+		}
+	}
+	.switcher-trigger{
+		background-color: $light-dark;
+		color: #fff;
+	}
+
+	.service-hex {
+		.st0 {
+			fill: transparent;
+		}
+
+		&:hover {
+			.st0 {
+				fill: #fff;
+			}
+		}
+	}
+
+	.testimonials .text,
+	.btn-border {
+		border-color: #1e2530;
+	}
+}

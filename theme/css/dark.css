@@ -1,0 +1,48 @@
+.dark {
+  background-color: #090115;
+  color: #ababab;
+}
+.dark .waviy span {
+  color: #fff;
+}
+.dark .page-home .overlay {
+  background-color: rgba(30, 37, 48, 0.8);
+}
+.dark .subtitle b {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+}
+.dark .page-title .title-bg {
+  color: rgba(30, 37, 48, 0.9);
+}
+.dark .section-title h3::before {
+  background-color: #fff;
+}
+.dark .preview-wrapper {
+  background-color: #1e2530;
+}
+.dark .switcher-head {
+  color: #fff;
+  background-color: #1e2530;
+}
+.dark .switcher-body {
+  background-color: #1e2530;
+}
+.dark .switcher-body h4 {
+  color: #fff;
+}
+.dark .switcher-trigger {
+  background-color: #1e2530;
+  color: #fff;
+}
+.dark .service-hex .st0 {
+  fill: transparent;
+}
+.dark .service-hex:hover .st0 {
+  fill: #fff;
+}
+.dark .testimonials .text,
+.dark .btn-border {
+  border-color: #1e2530;
+}
+/*# sourceMappingURL=dark.css.map */
