@@ -1,7 +1,8 @@
 "use strict";
 
-const sass = require("gulp-sass")(require("sass"));
 const gulp = require("gulp");
+const sass = require("gulp-sass")(require("sass"));
+const babel = require('gulp-babel');
 const gutil = require("gulp-util");
 const sourcemaps = require("gulp-sourcemaps");
 const fileinclude = require("gulp-file-include");
@@ -109,6 +110,12 @@ gulp.task("js:build", function () {
   // GITHUB: https://github.com/themefisher/
   // `)
   //   )
+    .pipe(sourcemaps.init())
+    .pipe(babel({
+        presets: ['@babel/env']
+    }))
+    // .pipe(concat('all.js'))
+    .pipe(sourcemaps.write('/'))
     .pipe(gulp.dest(path.build.dirDev + "js/"))
     .pipe(
       bs.reload({

@@ -64,7 +64,7 @@
   .hexagon-item:nth-last-child(1),
   .hexagon-item:nth-last-child(2),
   .hexagon-item:nth-last-child(3) {
-    @include transform(rotate(30deg) translate(87px, -80px));
+    // @include transform(rotate(30deg) translate(87px, -80px)); // uncomment when you need to add more hexes
   }
 }
 

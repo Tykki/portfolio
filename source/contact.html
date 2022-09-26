@@ -127,7 +127,7 @@
         <nav class="page-nav clear">
           <div class="container">
             <div class="flex flex-middle space-between">
-              <span class="prev-page"><a href="testimonials.html" class="link">&larr; Prev Page</a></span>
+              <span class="prev-page"><a href="services.html" class="link">&larr; Prev Page</a></span>
               <span class="copyright">Copyright &copy; <script>document.write( new Date().getUTCFullYear() );</script>, Developed by Tykki.</span>
             </div>
           </div>
@@ -139,5 +139,11 @@
       </div> <!-- /.pt-tablecell -->
     </div> <!-- /.pt-table -->
   </main> <!-- /.site-wrapper -->
+  <script src="https://www.google.com/recaptcha/api.js"></script>
+  <script>
+    function onSubmit(token) {
+      document.getElementById("demo-form").submit();
+    }
+  </script>
   
 @@include('footer.htm')
