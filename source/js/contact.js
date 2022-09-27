@@ -2,7 +2,7 @@
 (function () {
     'use strict';
 
-    const validation = new JustValidate('#form', {
+    const validation = new JustValidate('#contact-form', {
         errorFieldCssClass: 'is-invalid',
       });
       
@@ -11,49 +11,52 @@
           {
             rule: 'minLength',
             value: 3,
+            errorMessage: 'Please Let me know who you are'
           },
           {
             rule: 'maxLength',
             value: 30,
           },
+          {
+            rule: 'required',
+            errorMessage: 'Please Let me know who you are'
+          }
         ])
         .addField('#email', [
           {
             rule: 'required',
-            errorMessage: 'Field is required',
+            errorMessage: 'Please let me know how to contact you',
           },
           {
             rule: 'email',
-            errorMessage: 'Email is invalid!',
+            errorMessage: 'Email is invalid',
           },
         ])
-        .addField('#password', [
-          {
-            rule: 'password',
-          },
+        .addField('#subject', [
+            {
+              rule: 'minLength',
+              value: 6,
+            },
+            {
+              rule: 'maxLength',
+              value: 40,
+            },
+            {
+              rule: 'required',
+              errorMessage: 'Please Let me know what this is about'
+            }
         ])
         .addField('#message', [
           {
-            validator: (value) => {
-              return value[0] === '!';
+            rule: 'minLength',
+            value: 3,
+            errorMessage: 'Please tell me more'
             },
-          },
-        ])
-        .addField('#consent_checkbox', [
-          {
+            {
             rule: 'required',
+            errorMessage: 'Please Let me know how I can help'
           },
         ])
-        .addField('#favorite_animal_select', [
-          {
-            rule: 'required',
-          },
-        ])
-        .addRequiredGroup(
-          '#read_terms_checkbox_group',
-          'You should select at least one communication channel'
-        )
-        .addRequiredGroup('#communication_radio_group')
         .onSuccess((event) => {
           console.log('Validation passes and form submitted', event);
         });
