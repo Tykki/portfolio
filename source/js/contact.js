@@ -3,7 +3,7 @@
     'use strict';
 
     const validation = new JustValidate('#contact-form', {
-        errorFieldCssClass: 'is-invalid',
+        // errorFieldCssClass: 'is-invalid',
       });
       
       validation
@@ -20,7 +20,7 @@
           {
             rule: 'required',
             errorMessage: 'Please Let me know who you are'
-          }
+          },
         ])
         .addField('#email', [
           {

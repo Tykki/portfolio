@@ -1470,4 +1470,11 @@ label {
 .dark .btn-border {
   border-color: #1e2530;
 }
+
+/*------------------------------------------------
+	Other Styles for Site
+-------------------------------------------------*/
+.just-validate-error-label {
+  font-size: 12px;
+}
 /*# sourceMappingURL=style.css.map */

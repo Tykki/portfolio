@@ -3,8 +3,7 @@
 (function () {
   'use strict';
 
-  var validation = new JustValidate('#contact-form', {
-    errorFieldCssClass: 'is-invalid'
+  var validation = new JustValidate('#contact-form', {// errorFieldCssClass: 'is-invalid',
   });
   validation.addField('#name', [{
     rule: 'minLength',
