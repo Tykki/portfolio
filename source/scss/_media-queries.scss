@@ -46,7 +46,7 @@
 			display: block;
 			height: auto;
 			margin: 0 auto;
-			width: 50%;
+			width: 65%;
 		}
 	}
 
@@ -158,24 +158,25 @@
 
 	.author-image-large {
 		position: static;
-		margin-bottom: 50px;
+		// margin-bottom: 30px;
 
 		img {
 			display: block;
 			height: auto;
 			margin: 0 auto;
-			width: 50%;
+			width: 65%;
 		}
 	}
 
 	.about-author {
-		display: block;
+		display: flex;
 
 		.author-thumb {
 			border: 0 none;
 			margin-bottom: 15px;
-			margin-right: 0;
-			padding: 0;
+			margin-right: 30px;
+			// padding: 0;
+			width: fit-content;
 		}
 
 		.author-desc b {
@@ -245,4 +246,20 @@
 		}
 	}
 
+}
+
+@media only screen and (max-width: 415px) {
+	.waviy {
+		// margin-top: 40px;
+		span {
+			font-size: 28px;
+		}
+	}
+
+	.page-title{
+		margin-top: 40px;
+	}
+	.author-image-large{
+		margin-top: 40px;
+	}
 }
