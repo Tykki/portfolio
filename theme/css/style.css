@@ -491,7 +491,7 @@ label {
 -------------------------------------------------*/
 .author-image-large {
   position: absolute;
-  right: 0;
+  right: -160px;
   top: 0;
 }
 .author-image-large img {
