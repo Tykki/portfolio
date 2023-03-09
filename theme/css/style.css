@@ -1417,6 +1417,7 @@ label {
     margin-right: 0;
   }
   .page-nav {
+    margin-top: 20px;
     bottom: auto;
   }
   .page-nav .flex {
