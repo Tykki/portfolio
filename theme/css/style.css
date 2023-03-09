@@ -1351,6 +1351,9 @@ label {
   .hexagon-item:first-child {
     margin-left: auto;
   }
+  .page-home {
+    padding-bottom: 26px;
+  }
   .page-home .hexagon-item:nth-last-child(1),
   .page-home .hexagon-item:nth-last-child(2),
   .page-home .hexagon-item:nth-last-child(3) {
