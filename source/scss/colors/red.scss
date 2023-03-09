@@ -1,5 +1,4 @@
 $primary-color: #FA6862;
-// $title-color: #A9A0B7;
 
 
 /*
@@ -63,20 +62,4 @@ $primary-color: #FA6862;
 .service-hex:hover .fill,
 .service-hex:hover .st1 {
   	fill: $primary-color;
-}
-
-.page-title {
-	h2 {
-		// color: $title-color;
-	}
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.about-author .author-desc p {
-	// color: $title-color;
 }

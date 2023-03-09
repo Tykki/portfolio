@@ -250,6 +250,10 @@
 		}
 	}
 
+	.page-title{
+		margin-top: 40px;
+	}
+
 }
 
 @media only screen and (max-width: 415px) {
@@ -260,10 +264,8 @@
 		}
 	}
 
-	.page-title{
-		margin-top: 40px;
-	}
-	.author-image-large{
-		margin-top: 40px;
-	}
+	
+	// .author-image-large{
+	// 	margin-top: 40px;
+	// }
 }

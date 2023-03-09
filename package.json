@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "Tykki's web developer portfolio",
+  "description": "Tykki's Web Dev Porfolio",
   "author": "Tykki",
   "license": "MIT",
   "scripts": {
@@ -11,7 +11,7 @@
   "dependencies": {
     "browser-sync": "^2.27.10",
     "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^6.1.0",
+    "gulp-autoprefixer": "^8.0.0",
     "gulp-file-include": "^2.3.0",
     "gulp-header-comment": "^0.10.0",
     "gulp-jshint": "^2.1.0",
@@ -20,14 +20,9 @@
     "gulp-rimraf": "^1.0.0",
     "gulp-sass": "^5.1.0",
     "gulp-sourcemaps": "^3.0.0",
-    "gulp-util": "^1.0.0",
+    "gulp-util": "^3.0.8",
     "jshint": "^2.13.4",
     "jshint-stylish": "^2.2.1",
     "sass": "^1.53.0"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.19.1",
-    "@babel/preset-env": "^7.19.1",
-    "gulp-babel": "^8.0.0"
   }
 }

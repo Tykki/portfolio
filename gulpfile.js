@@ -1,8 +1,7 @@
 "use strict";
 
-const gulp = require("gulp");
 const sass = require("gulp-sass")(require("sass"));
-const babel = require('gulp-babel');
+const gulp = require("gulp");
 const gutil = require("gulp-util");
 const sourcemaps = require("gulp-sourcemaps");
 const fileinclude = require("gulp-file-include");
@@ -23,7 +22,7 @@ var path = {
     plugins: "source/plugins/**/*.*",
     js: "source/js/*.js",
     scss: "source/scss/**/*.scss",
-    images: "source/images/**/*.+(png|jpg|gif|svg)",
+    images: "source/images/**/*.+(png|jpg|gif|svg|ico)",
     fonts: "source/fonts/**/*.+(eot|ttf|woff|woff2|otf)",
   },
   build: {
@@ -42,14 +41,6 @@ gulp.task("html:build", function () {
         basepath: path.src.incdir,
       })
     )
-    // .pipe(
-    //   comments(`
-    // WEBSITE: https://themefisher.com
-    // TWITTER: https://twitter.com/themefisher
-    // FACEBOOK: https://www.facebook.com/themefisher
-    // GITHUB: https://github.com/themefisher/
-    // `)
-    // )
     .pipe(gulp.dest(path.build.dirDev))
     .pipe(
       bs.reload({
@@ -70,14 +61,6 @@ gulp.task("scss:build", function () {
     )
     .pipe(autoprefixer())
     .pipe(sourcemaps.write("/"))
-    // .pipe(
-    //   comments(`
-    // WEBSITE: https://themefisher.com
-    // TWITTER: https://twitter.com/themefisher
-    // FACEBOOK: https://www.facebook.com/themefisher
-    // GITHUB: https://github.com/themefisher/
-    // `)
-    // )
     .pipe(gulp.dest(path.build.dirDev + "css/"))
     .pipe(
       bs.reload({
@@ -102,20 +85,6 @@ gulp.task("js:build", function () {
     )
     .pipe(jshint.reporter("jshint-stylish"))
     .on("error", gutil.log)
-  //   .pipe(
-  //     comments(`
-  // WEBSITE: https://themefisher.com
-  // TWITTER: https://twitter.com/themefisher
-  // FACEBOOK: https://www.facebook.com/themefisher
-  // GITHUB: https://github.com/themefisher/
-  // `)
-  //   )
-    .pipe(sourcemaps.init())
-    .pipe(babel({
-        presets: ['@babel/env']
-    }))
-    // .pipe(concat('all.js'))
-    .pipe(sourcemaps.write('/'))
     .pipe(gulp.dest(path.build.dirDev + "js/"))
     .pipe(
       bs.reload({
