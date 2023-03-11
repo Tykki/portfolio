@@ -82,29 +82,32 @@
                 <span class="bar-primary"></span>
               </div>
 
-              <form id="contact-form" class="row contact-form no-gutter" action="#">
+              <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" 
+              onload=""></iframe>
+              <h3 id="successMsg" style="display: none; color: #64537F;">Your Message has been Sent Successfully</h3>
+              <form id="contact-form" class="row contact-form no-gutter" method="post" target="hidden_iframe" action="https://docs.google.com/forms/d/e/1FAIpQLSeaUzow79wyQrrIVaWS3eg4CG4Nwlgu4J3AyByzZh1NTW3Fdg/formResponse" onsubmit="submitted=true;">
                 <div class="col-xs-12 col-sm-6">
                   <div class="input-field name">
                     <span class="input-icon" id="name-icon"><i class="tf-profile-male"></i></span>
-                    <input id="name" type="text" name="name" class="form-control" placeholder="Enter your name">
+                    <input id="name" type="text" name="entry.2005620554" class="form-control" placeholder="Enter your name">
                   </div>
                 </div> <!-- ./col- -->
                 <div class="col-xs-12 col-sm-6">
                   <div class="input-field email">
                     <span class="input-icon" id="email-icon"><i class="tf-envelope2"></i></span>
-                    <input id="email" type="email" class="form-control" name="email" placeholder="Your email address" required>
+                    <input id="email" type="email" class="form-control" name="entry.1045781291" placeholder="Your email address" required>
                   </div>
                 </div> <!-- ./col- -->
                 <div class="col-xs-12 col-sm-12">
                   <div class="input-field">
                     <span class="input-icon" id="subject-icon"><i class="tf-pricetags"></i></span>
-                    <input id="subject" type="text" class="form-control" name="subject" placeholder="Enter the discussion title" required>
+                    <input id="subject" type="text" class="form-control" name="entry.1065046570" placeholder="Enter the discussion title" required>
                   </div>
                 </div> <!-- ./col- -->
                 <div class="col-xs-12 col-sm-12">
                   <div class="input-field message">
                     <span class="input-icon" id="input-icon"><i class="tf-pencil2"></i></span>
-                    <textarea name="message" id="message" class="form-control"
+                    <textarea name="entry.1166974658" id="message" class="form-control"
                       placeholder="Write your message" required></textarea>
                   </div>
                 </div> <!-- ./col- -->
@@ -142,10 +145,5 @@
   <script src="js/contact.js"></script>
 
   <script src="https://www.google.com/recaptcha/api.js"></script>
-  <script>
-    function onSubmit(token) {
-      document.getElementById("demo-form").submit();
-    }
-  </script>
   
 @@include('footer.htm')

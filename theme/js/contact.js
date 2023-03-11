@@ -5,7 +5,14 @@
     const validation = new JustValidate('#contact-form', {
         // errorFieldCssClass: 'is-invalid',
       });
-      
+      const successMsg = document.querySelector('#successMsg')
+      const form = document.querySelector('#contact-form')
+      // form.addEventListener('submit', ()=>{
+      //   success()
+      // })
+      // const success = () => {
+      //   document.querySelector('#contact-form').style.display = 'none'
+      // }
       validation
         .addField('#name', [
           {
@@ -59,5 +66,9 @@
         ])
         .onSuccess((event) => {
           console.log('Validation passes and form submitted', event);
+          // submitted = true
+        document.querySelector('#contact-form').style.display = 'none'
+        form.submit()
+          successMsg.style.display = 'block'
         });
 }());
