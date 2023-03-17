@@ -22,6 +22,11 @@
 	}
 }
 
+@media (min-width: 980px) {
+	.page-works{
+		padding-bottom: 3em;
+	}
+}
 
 /*============================================================
 	Tablet (Portrait) Design for a width of 768px
@@ -269,4 +274,10 @@
 	// .author-image-large{
 	// 	margin-top: 40px;
 	// }
+}
+
+@media (min-width: 768px) {
+	.work-title{
+		margin-top: 40px;
+	}
 }

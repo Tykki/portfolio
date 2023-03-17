@@ -1,6 +1,6 @@
 (function($) {
 	"use strict";
-
+	// console.log(process.environment.name ? 'bet' : 'no')
 	$(".history-scroller").niceScroll({
 		cursorwidth: "10px",
 		background: "#0d1015",
