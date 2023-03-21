@@ -376,6 +376,16 @@ label {
   transform: scale(0.97);
 }
 
+.dev {
+  visibility: hidden;
+}
+
+.page-home .hexagon-item:nth-last-child(1),
+.page-home .hexagon-item:nth-last-child(2),
+.page-home .hexagon-item:nth-last-child(3) {
+  transform: rotate(30deg) translate(87px, -80px);
+}
+
 .hex-item {
   position: absolute;
   top: 0;
@@ -1438,6 +1448,9 @@ label {
   }
   .page-title {
     margin-top: 40px;
+  }
+  .dev {
+    display: none;
   }
 }
 @media only screen and (max-width: 415px) {
