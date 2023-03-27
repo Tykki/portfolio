@@ -306,7 +306,6 @@ label {
 }
 
 .page-nav {
-  bottom: 40px;
   left: 0;
   position: absolute;
   right: 0;
@@ -1108,10 +1107,6 @@ label {
   padding-bottom: 110px;
   padding-top: 60px;
 }
-.pt-table.desktop-768 .pt-tablecell .page-nav {
-  bottom: 40px;
-}
-
 /* =================================== */
 /*  Color Switcher
 /* =================================== */
@@ -1347,7 +1342,7 @@ label {
     height: auto;
   }
   .pt-table,
-  .pt-tablecell {
+.pt-tablecell {
     display: block;
   }
   .page-title {
@@ -1370,8 +1365,8 @@ label {
     padding-bottom: 26px;
   }
   .page-home .hexagon-item:nth-last-child(1),
-  .page-home .hexagon-item:nth-last-child(2),
-  .page-home .hexagon-item:nth-last-child(3) {
+.page-home .hexagon-item:nth-last-child(2),
+.page-home .hexagon-item:nth-last-child(3) {
     transform: rotate(30deg) translate(0px, 0px);
   }
   .author-image-large {
